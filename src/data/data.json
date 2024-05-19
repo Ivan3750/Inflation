@@ -1,0 +1,108 @@
+[
+    {
+        "page": 1,
+        "pages": 1,
+        "per_page": 50,
+        "total": 6,
+        "sourceid": "2",
+        "lastupdated": "2024-03-28"
+    },
+    [
+        {
+            "indicator": {
+                "id": "FP.CPI.TOTL",
+                "value": "Consumer price index (2010 = 100)"
+            },
+            "country": {
+                "id": "KE",
+                "value": "Kenya"
+            },
+            "countryiso3code": "KEN",
+            "date": "2020",
+            "value": 200.233642283463,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+        },
+        {
+            "indicator": {
+                "id": "FP.CPI.TOTL",
+                "value": "Consumer price index (2010 = 100)"
+            },
+            "country": {
+                "id": "KE",
+                "value": "Kenya"
+            },
+            "countryiso3code": "KEN",
+            "date": "2019",
+            "value": 189.966315017817,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+        },
+        {
+            "indicator": {
+                "id": "FP.CPI.TOTL",
+                "value": "Consumer price index (2010 = 100)"
+            },
+            "country": {
+                "id": "KE",
+                "value": "Kenya"
+            },
+            "countryiso3code": "KEN",
+            "date": "2018",
+            "value": 180.514812183022,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+        },
+        {
+            "indicator": {
+                "id": "FP.CPI.TOTL",
+                "value": "Consumer price index (2010 = 100)"
+            },
+            "country": {
+                "id": "KE",
+                "value": "Kenya"
+            },
+            "countryiso3code": "KEN",
+            "date": "2017",
+            "value": 172.428238576216,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+        },
+        {
+            "indicator": {
+                "id": "FP.CPI.TOTL",
+                "value": "Consumer price index (2010 = 100)"
+            },
+            "country": {
+                "id": "KE",
+                "value": "Kenya"
+            },
+            "countryiso3code": "KEN",
+            "date": "2016",
+            "value": 159.647316938312,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+        },
+        {
+            "indicator": {
+                "id": "FP.CPI.TOTL",
+                "value": "Consumer price index (2010 = 100)"
+            },
+            "country": {
+                "id": "KE",
+                "value": "Kenya"
+            },
+            "countryiso3code": "KEN",
+            "date": "2015",
+            "value": 150.189638797652,
+            "unit": "",
+            "obs_status": "",
+            "decimal": 1
+        }
+    ]
+]
