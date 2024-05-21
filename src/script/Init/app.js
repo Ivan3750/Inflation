@@ -4,9 +4,13 @@ document.getElementById('inflation-form').addEventListener('submit', function(ev
     event.preventDefault();
     
 
+/*     const country = document.getElementById('country').value;
+ *//*     const startYear = document.getElementById('start-year').value;
+    const endYear = document.getElementById('end-year').value; */
+    const startYear = document.getElementById('startDate').value;
+    const endYear = document.getElementById('endDate').value;
     const country = document.getElementById('country').value;
-    const startYear = document.getElementById('start-year').value;
-    const endYear = document.getElementById('end-year').value;
+
     const amount = parseFloat(document.getElementById('amount').value);
     console.error((`https://api.worldbank.org/v2/country/${country}/indicator/FP.CPI.TOTL?date=${startYear}:${endYear}&format=json`))
     fetch(`https://api.worldbank.org/v2/country/${country}/indicator/FP.CPI.TOTL?date=${startYear}:${endYear}&format=json`)
