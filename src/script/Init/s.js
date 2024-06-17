@@ -1,6 +1,3 @@
-let TYPE_OF_FETCH = "get-data-json"
-TYPE_OF_FETCH = "calculate-inflation-price-jsonp"
-
 
 export const getCountryAmount = (amount,startDate, endDate, country, isShow) => {
 
@@ -13,16 +10,13 @@ console.log(url)
             // Log the parameters
 /*             let json = text.replace(/^\?\(/, '').replace(/\);$/, '');
  */            let json = text.slice(3,text.length-2)
-            return json;
-        })
-        .then(data => {
-            console.log([amount,startDate, endDate, country, isShow])
-            if(isShow){
-                console.log(data)
-                 return data;
-            }
-        })
-        .catch(error => console.error('Error:', error));
+ return json;
+})
+.then(data => {
+    if(isShow){
+        console.log(data)
+         return data;
+    }
+})
+.catch(error => console.error('Error:', error));
 }
-
-

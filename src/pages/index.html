@@ -9,62 +9,64 @@
     
 </head>
 <body>
-    <div class="calculator-box">
+    <section class="main__section">
+        <div class="calculator-box">
+            
+      
+        <h1>Inflation Calculator</h1>
+        <form id="inflation-form">
+            <label for="country">Land:</label>
+            <select id="country" name="country" required>
+                <option value="belarus">Belarus</option>
+                <option value="brazil">Brazil</option>
+                <option value="canada">Canada</option>
+                <option value="european-union">European Union</option>
+                <option value="eurozone">Eurozone</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="greece">Greece</option>
+                <option value="india">India</option>
+                <option value="japan">Japan</option>
+                <option value="kazakhstan">Kazakhstan</option>
+                <option value="mexico">Mexico</option>
+                <option value="spain">Spain</option>
+                <option value="turkey">Turkey</option>
+                <option value="ukraine" selected>Ukraine</option>
+                <option value="united-kingdom">United Kingdom</option>
+                <option value="united-states">United States</option>
+                <option value="DK">Denmark</option>
+            </select>
+            <label for="start-year">Start dato</label>
+    <!--         <input type="number" id="start-date" name="start-year"  placeholder="2010" required value='2012/1/1'>
+     -->        <input type='text' value='2012/1/1' id='startDate'/>
+            <label for="end-year">Slutdato</label>
+    <!--         <input type="number" id="end-date" name="end-year"   placeholder="2022" required value='2012/12/1'>
+     -->        <input type='text' value='2015/1/1' id='endDate'/>
+            <label for="amount" >Beløb:</label>
+            <div class="amount-box">
+                <input type="number" id="amount" name="amount" placeholder="100" required value="100">
+                <p class="valuta"></p>
+            </div>
+            <button type="submit" class="btn-submit" id="btn-submit">Beregn</button>
+            End Price:<input type='text' value=''  id='endPrice'/>
+        </form>
         
-  
-    <h1>Inflation Calculator</h1>
-    <form id="inflation-form">
-        <label for="country">Land:</label>
-        <select id="country" name="country" required>
-            <option value="belarus">Belarus</option>
-            <option value="brazil">Brazil</option>
-            <option value="canada">Canada</option>
-            <option value="european-union">European Union</option>
-            <option value="eurozone">Eurozone</option>
-            <option value="france">France</option>
-            <option value="germany">Germany</option>
-            <option value="greece">Greece</option>
-            <option value="india">India</option>
-            <option value="japan">Japan</option>
-            <option value="kazakhstan">Kazakhstan</option>
-            <option value="mexico">Mexico</option>
-            <option value="spain">Spain</option>
-            <option value="turkey">Turkey</option>
-            <option value="ukraine" selected>Ukraine</option>
-            <option value="united-kingdom">United Kingdom</option>
-            <option value="united-states">United States</option>
-            <option value="DK">Denmark</option>
-        </select>
-        <label for="start-year">Start dato</label>
-<!--         <input type="number" id="start-date" name="start-year"  placeholder="2010" required value='2012/1/1'>
- -->        <input type='text' value='2012/1/1' id='startDate'/>
-        <label for="end-year">Slutdato</label>
-<!--         <input type="number" id="end-date" name="end-year"   placeholder="2022" required value='2012/12/1'>
- -->        <input type='text' value='2015/12/1' id='endDate'/>
-        <label for="amount" >Beløb:</label>
-        <div class="amount-box">
-            <input type="number" id="amount" name="amount" placeholder="100" required value="100">
-            <p class="valuta"></p>
-        </div>
-        <button type="submit" class="btn-submit" id="btn-submit">Beregn</button>
-        End Price:<input type='text' value=''  id='endPrice'/>
-    </form>
     
+        <p id="result"></p>
+        <p class="minmax"></p>
+    </div>
+    
+        
+        <canvas id="myLineChart" width="400" height="100"></canvas>
 
-    <p id="result"></p>
-    <p class="minmax"></p>
-</div>
-
-  
-    <canvas id="myLineChart" width="400" height="100"></canvas>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
 
-  <script type="module" src="../script/Init/main.js"></script>
-  <script type="module" src="../script/Init/fetchDK.js"></script>
+<!--   <script type="module" src="../script/Init/main.js"></script>
+ -->  <script type="module" src="../script/Init/fetchDK.js"></script>
   <script type="module" src="../script/Init/fetchAll.js"></script>
   <script type="module" src="../script/Config/index.js"></script>
-  <script src="../script/UI/valutaUI.js"></script>
 
 
 </body>

@@ -1,17 +1,18 @@
 const country = document.querySelector('#country');
 const valuta = document.querySelector('.valuta');
 
-
-
 fetch("../data/valuta.json")
     .then(response => response.json())
     .then(data =>{
-        country.addEventListener("click",()=>{
-            let findElem = countries.find((elem)=>{
-                if(elem.name == country.value){
-                    return elem
-                }
-            })
-            valuta.innerHTML = findElem
-        })
-    })
+        console.log(data)
+        country.addEventListener("change", () => {
+            const findCountry = data.find(element => {
+                return element.country === country.value;
+            });
+            if (findCountry) {
+                valuta.innerHTML = findCountry.currency;
+            } else {
+                valuta.innerHTML = "Currency not found for selected country";
+            }
+        });
+    });
