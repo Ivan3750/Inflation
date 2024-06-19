@@ -91,10 +91,11 @@ export const getDanmarkIndex = (amount, startDate, endDate, country, isShow) => 
                 }, {});
 
                 const inflationProcent = ((inflationRates[endYear] - inflationRates[startYear]) / inflationRates[startYear]) * 100;
+                console.log("endYear" + endYear + " startYear" + startYear + " procetnt " + inflationProcent)
                 amount = Number(amount);
                 let adjustedAmount = amount + (amount * inflationProcent) / 100;
                 adjustedAmount = adjustedAmount.toFixed(2);
-
+                console.log(adjustedAmount)
                 return [adjustedAmount, inflationRates];
             } else {
                 if (isShow) {

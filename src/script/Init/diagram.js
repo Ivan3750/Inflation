@@ -26,10 +26,10 @@ export function loadDiagram(ArrayYears, ArrayValues) {
     myLineChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ArrayYears.reverse(), // Create a copy and reverse it
+            labels: ArrayYears, // Create a copy and reverse it
             datasets: [{
                 label: "Inflation statistik",
-                data: ArrayValues.reverse(), // Create a copy and reverse it
+                data: ArrayValues, // Create a copy and reverse it
                 fill: false,
                 borderColor: 'rgb(75, 192, 192)',
                 tension: 0.1
