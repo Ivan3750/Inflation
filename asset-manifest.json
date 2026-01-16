@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/inflation/static/css/main.64814353.css",
+    "main.js": "/inflation/static/js/main.f29bebed.js",
+    "index.html": "/inflation/index.html",
+    "main.64814353.css.map": "/inflation/static/css/main.64814353.css.map",
+    "main.f29bebed.js.map": "/inflation/static/js/main.f29bebed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64814353.css",
+    "static/js/main.f29bebed.js"
+  ]
+}
