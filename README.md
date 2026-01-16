@@ -17,7 +17,7 @@ A modern **React** application for analyzing inflation trends and calculating ho
 
 ## Demo
 
-![Screenshot](./assets/demo.png)  
+![Screenshot](./public/demo.png)  
 *The interactive chart updates automatically based on your inputs.*
 
 ---
